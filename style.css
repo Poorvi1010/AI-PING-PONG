@@ -1,0 +1,25 @@
+body
+{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+.heading
+{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    background-color: #fae528;
+    margin-top: 0px;
+    top: 0;
+    
+}
+#start
+{
+    width: 50px;
+    height: 45px;
+    
+}
+#Instructions
+{
+    float: right;
+    border: 1px solid white;
+}
