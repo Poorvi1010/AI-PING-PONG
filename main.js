@@ -23,10 +23,28 @@ var ball = {
 
 function setup(){
   var canvas =  createCanvas(700,600);
+  canvas.center();
+  video=createCapture(VIDEO);
+  video.size(700,600);
+  posenet=ml5.poseNet(video,modelLoaded);
+posenet.on("pose",gotPoses)
+
+}
+function modelLoaded()
+{
+  console.log("Modal loaded")
+}
+function gotPoses(results)
+{
+if(results.length>0)
+{
+  console.log(results);
+}
 }
 
 
 function draw(){
+image(video,0,0,700,600);
 
  background(0); 
 
